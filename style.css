@@ -22,6 +22,7 @@ body {
   background-color: rgba(0, 0, 0, 0.485);
   position: fixed;
   top: -2000px;
+  z-index: 999999;
 }
 .active{
   top: 0;
@@ -78,6 +79,10 @@ body {
   height: 108px;
   border-radius: 10px;
   overflow: hidden;
+  border: 1px solid #e1e1e1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .productData p{
   font-size: 13px;
@@ -99,7 +104,7 @@ body {
   gap: 80px;
   padding: 20px 0;
 }
-.subtotal{
+.subtotalText{
   color: #B88E2F;
 }
 .hr {
@@ -124,6 +129,12 @@ body {
 }
 
 /* Styling nav section */
+nav{
+  position: fixed;
+  width: 100%;
+  z-index: 99999;
+  backdrop-filter: blur(15px);
+}
 nav .container {
   display: flex;
   align-items: center;
@@ -569,6 +580,7 @@ form input {
   border: none;
   border-bottom: 1px solid black;
   outline: none;
+  background-color: transparent;
 }
 form button {
   background-color: transparent;
