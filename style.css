@@ -6,7 +6,7 @@
   transition: all 0.5s ease;
   font-family: "Poppins";
 }
-body{
+body {
   background-color: #fafafa;
 }
 .container {
@@ -14,6 +14,114 @@ body{
   margin: auto;
 }
 /* Styling header section */
+
+/* Styling cart modal */
+.cartBack {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.485);
+  position: fixed;
+  top: -2000px;
+}
+.active{
+  top: 0;
+}
+.cart {
+  padding: 28px;
+  position: absolute;
+  width: 470px;
+  background-color: white;
+  right: 0;
+  top: 0;
+}
+.total h2{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.cartProducts {
+  padding: 30px 0;
+  max-height: 400px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  scrollbar-width: thin;
+}
+.cart-title{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 26px;
+  border-bottom: 1px solid #d9d9d9;
+}
+.aboutProduct{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: start;
+}
+.productPrice{
+  color: #B88E2F;
+}
+.product {
+  display: flex;
+  align-items: center;
+  justify-content: space-between !important;
+}
+.productTitle{
+  font-size: 18px;
+  font-weight: 500;
+}
+.productImg {
+  width: 108px;
+  height: 108px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.productData p{
+  font-size: 13px;
+  font-weight: 500;
+}
+.productImg img {
+  width: 100%;
+  object-fit: contain;
+}
+.product-calc {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.total {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 80px;
+  padding: 20px 0;
+}
+.subtotal{
+  color: #B88E2F;
+}
+.hr {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #898989;
+}
+.cartButtons{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+.cartButtons button{
+  padding: 6px 30px;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: transparent;
+}
 
 /* Styling nav section */
 nav .container {
@@ -41,6 +149,17 @@ nav .container {
   align-items: center;
   justify-content: center;
   gap: 45px;
+}
+.navBtn{
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.navBtn:hover{
+  background-color: #898989;
 }
 
 /* Styling hero section */
@@ -150,7 +269,7 @@ nav .container {
   height: 1190px;
   overflow: hidden;
 }
-.moreProduct{
+.moreProduct {
   transition: all 1s ease;
   height: 3050px;
 }
@@ -170,12 +289,13 @@ nav .container {
   justify-content: center;
   position: relative;
   background-color: white;
+  padding: 20px;
 }
-.card-img img{
+.card-img img {
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
-.cardbottom{
+.cardbottom {
   display: flex;
   gap: 15px;
   flex-wrap: wrap;
@@ -188,7 +308,7 @@ nav .container {
   position: absolute;
   width: 100%;
   height: 100%;
-  bottom: -630px;
+  bottom: 0px;
   z-index: 99;
   background-color: rgba(0, 0, 0, 0.63);
   display: flex;
@@ -196,9 +316,11 @@ nav .container {
   justify-content: center;
   flex-direction: column;
   padding: 20px;
+  opacity: 0;
 }
 .sct2-card:hover .hover-data {
-  bottom: 0;
+  opacity: 1;
+  transition: all 1s ease;
 }
 .sct2-card:hover .discount {
   top: -100px;
@@ -215,6 +337,7 @@ nav .container {
   align-items: center;
   justify-content: center;
   background-color: white;
+  cursor: pointer;
   border: none;
 }
 .hover-bottom {
@@ -249,11 +372,11 @@ nav .container {
   color: #898989;
   padding-bottom: 8px;
 }
-.price{
+.price {
   font-size: 20x;
   color: black;
 }
-.key{
+.key {
   font-weight: 600;
 }
 .card-price h2 {

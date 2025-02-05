@@ -1,10 +1,15 @@
 const sctBlock = document.querySelector(".sct2-block");
 const showMore = document.querySelector(".showMore");
-const apiLink = "https://fakestoreapi.com/products";
+const closeCart = document.querySelector(".closeCart");
+const cartBack = document.querySelector(".cartBack");
 
+const shoppingCart = document.querySelector(".shoppingCart");
+const apiLink = "https://fakestoreapi.com/products";
+let cartElements = []
+let data;
 const getData = async (link) => {
   const req = await fetch(link);
-  const data = await req.json();
+   data = await req.json();
   console.log(data);
   writeData(data);
 };
@@ -16,7 +21,7 @@ const writeData = (DB) => {
         
         <div class="sct2-card">
               <div class="hover-data">
-                <div class="addCart">Add to cart</div>
+                <div onclick="addProduct(${item.id})" class="addCart">Add to cart</div>
                 <div class="hover-bottom">
                   <div class="hover-item">
                     <img src="img/share.svg" alt="" />
@@ -61,3 +66,19 @@ showMore.addEventListener("click", () => {
     showMore.textContent = "Show more";
   }
 });
+
+shoppingCart.addEventListener("click", ()=>{
+cartBack.classList.add("active")
+})
+closeCart.addEventListener("click", ()=>{
+  cartBack.classList.remove("active")
+})
+
+const addProduct = (id)=>{
+  data.forEach(item =>{
+    if(item.id == id){
+      cartElements.push(item)
+      console.log(cartElements);
+    }
+  })
+}
