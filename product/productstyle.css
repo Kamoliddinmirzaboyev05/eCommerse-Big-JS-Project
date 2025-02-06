@@ -163,11 +163,127 @@ main {
   align-items: center;
   justify-content: center;
 }
-.addToCart, .compare{
+.addToCart,
+.compare {
   padding: 17px 40px;
   border-radius: 15px;
   border: 1px solid black;
   background-color: transparent;
   font-size: 18px;
   display: flex;
+}
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #d9d9d9;
+  margin-top: 50px;
+  margin-bottom: 41px;
+}
+.characters {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 20px;
+}
+.col p {
+  padding-bottom: 10px !important;
+  color: #9f9f9f;
+}
+.socials {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 20px;
+  font-size: 20px;
+}
+
+/* styling description section */
+
+.description {
+  padding: 48px 0;
+  border-top: 1px solid #d9d9d9;
+}
+.title-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  font-size: 24px;
+  color: #9f9f9f;
+  font-weight: 400;
+  padding-bottom: 37px;
+}
+.title-row h2 {
+  font-size: 24px;
+  color: #9f9f9f;
+  font-weight: 400;
+}
+.title-row h2:first-child{
+  font-weight: 500;
+  color: #000;
+}
+.description-text p{
+  padding-bottom: 30px;
+  color: #9F9F9F;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.description-image{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.d-img{
+  width: 590px;
+  height: 320px;  
+  border-radius: 10px;
+  background-color: #F9F1E7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.related-products{
+  padding-bottom: 80px;
+}
+.section-title{
+  width: 100%;
+  text-align: center;
+}
+.section-title h2{
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 54px;
+  padding-bottom: 26px;
+}
+.sct2-card .card-img{
+  padding: 0;
+}
+.products-block{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 44px;
+}
+.sct2-card{
+  box-shadow: 0px 0px 0px transparent;
+}
+.show-more{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.show-more .moreBtn{
+  width: 250px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: #B88E2F;
+  border: 1px solid #B88E2F;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
 }
