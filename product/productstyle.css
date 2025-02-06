@@ -1,0 +1,173 @@
+main {
+  padding-top: 100px;
+}
+.way {
+  background-color: #f9f1e7;
+  padding: 38px 0;
+}
+.way .container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 15px;
+}
+.main-data {
+  padding: 35px 0;
+  padding-bottom: 80px;
+}
+.main-data .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.leftSide {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 30px;
+}
+.left-imgs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.img-box {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f1e7;
+  border-radius: 10px;
+}
+.main-img {
+  background-color: #f9f1e7;
+  border-radius: 10px;
+  width: 425px;
+  height: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-img img {
+  width: 100%;
+}
+.leftSide {
+  width: 510px;
+}
+.right-side {
+  width: 610px;
+}
+.product-title {
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 63px;
+}
+.product-price {
+  color: #9f9f9f;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+}
+.rating {
+  display: flex;
+  gap: 20px;
+  color: #9f9f9f;
+  padding-bottom: 18px;
+}
+.product-info {
+  font-size: 13px;
+  font-weight: 400;
+  width: 440px;
+  line-height: 19.5px;
+  padding-bottom: 22px;
+}
+.box-title {
+  font-size: 14px;
+  font-weight: 400;
+  color: #9f9f9f;
+  line-height: 21px;
+  padding-bottom: 12px;
+}
+.sizes {
+  display: flex;
+  gap: 16px;
+  padding-bottom: 18px;
+}
+.size-box {
+  width: 30px;
+  height: 30px;
+  background-color: #f9f1e7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+.size-box:first-child {
+  background-color: #b88e2f;
+  color: white;
+}
+.colors {
+  display: flex;
+  gap: 16px;
+  padding-bottom: 32px;
+}
+.color {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.blue {
+  background-color: #816dfa;
+}
+.black {
+  background-color: black;
+}
+.brown {
+  background-color: #b88e2f;
+}
+.mainBtns {
+  display: flex;
+  gap: 18px;
+}
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #9f9f9f;
+}
+.counter button {
+  padding: 5px;
+  border: none;
+  background-color: transparent;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  font-size: 18px;
+}
+.counter button:hover {
+  background-color: #9f9f9f;
+}
+.counter p {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.addToCart, .compare{
+  padding: 17px 40px;
+  border-radius: 15px;
+  border: 1px solid black;
+  background-color: transparent;
+  font-size: 18px;
+  display: flex;
+}

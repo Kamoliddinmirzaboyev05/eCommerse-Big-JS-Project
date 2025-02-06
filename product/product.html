@@ -1,12 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="productstyle.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="productstyle.css" />
+    <link rel="stylesheet" href="../style.css" />
     <title>Single Product</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div class="cartBack">
+      <div class="cart">
+        <div class="cart-title">
+          <h2>Shopping Cart</h2>
+          <div class="navBtn closeCart">
+            <img src="img/closecart.svg" alt="" />
+          </div>
+        </div>
+        <div class="cartProducts"></div>
+        <div class="total">
+          <h2>Subtotal:</h2>
+          <h2 class="subtotalText"><span class="subtotal">0</span> $</h2>
+        </div>
+        <div class="hr"></div>
+        <div class="cartButtons">
+          <button class="toCart">Cart</button>
+          <button class="toCart">Checkout</button>
+          <button class="toCart">Comparison</button>
+        </div>
+      </div>
+    </div>
+    <header>
+      <nav>
+        <div class="container">
+          <!-- This is Nav -->
+          <div class="logo">
+            <img src="../img/logo.svg" alt="" />
+          </div>
+          <ul class="links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+
+          <div class="navButtons">
+            <div class="navBtn"><i class="fa-regular fa-user"></i></div>
+            <div class="navBtn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="navBtn"><i class="fa-regular fa-heart"></i></div>
+            <div class="navBtn">
+              <i class="fa-solid fa-cart-shopping shoppingCart"></i>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="way">
+        <div class="container">
+          <p>Home</p>
+          <p><i class="fa-solid fa-chevron-right"></i></p>
+          <p>Shop</p>
+          <p><i class="fa-solid fa-chevron-right"></i></p>
+          <p>Asgard Sofa</p>
+        </div>
+      </div>
+      <div class="main-data">
+        <div class="container">
+          <div class="leftSide">
+            <div class="left-imgs">
+              <div class="img-box">
+                <img src="../img/main1.svg" alt="" />
+              </div>
+              <div class="img-box">
+                <img src="../img/main1.svg" alt="" />
+              </div>
+              <div class="img-box">
+                <img src="../img/main1.svg" alt="" />
+              </div>
+              <div class="img-box">
+                <img src="../img/main1.svg" alt="" />
+              </div>
+            </div>
+            <div class="main-img">
+              <img src="../img/mainmain.svg" alt="" />
+            </div>
+          </div>
+          <div class="right-side">
+            <h2 class="product-title">Asgaard sofa</h2>
+            <p class="product-price">Rs. 250,000.00</p>
+            <div class="rating">
+              <img src="../img/satrs.svg" alt="" />
+              <p>|</p>
+              <p>5 Customer Review</p>
+            </div>
+            <p class="product-info">
+              Setting the bar as one of the loudest speakers in its class, the
+              Kilburn is a compact, stout-hearted hero with a well-balanced
+              audio which boasts a clear midrange and extended highs for a
+              sound.
+            </p>
+            <p class="box-title">Size</p>
+            <div class="sizes">
+              <div class="size-box">
+                <p>L</p>
+              </div>
+              <div class="size-box">
+                <p>XL</p>
+              </div>
+              <div class="size-box">
+                <p>XS</p>
+              </div>
+            </div>
+            <p class="box-title">Color</p>
+            <div class="colors">
+              <div class="color blue"></div>
+              <div class="color black"></div>
+              <div class="color brown"></div>
+            </div>
+            <div class="mainBtns">
+              <div class="counter">
+                <button>-</button>
+                <p>1</p>
+                <button>+</button>
+              </div>
+              <button class="addToCart">Add To Cart</button>
+              <button class="compare">+ Compare</button>
+            </div>
+            <div class="characters">
+              <div class="col">
+                <p>SKU</p>
+                <p>Category</p>
+                <p>Tags</p>
+                <p>Share</p>
+              </div>
+              <div class="col">
+                <p>SS001</p>
+                <p>Sofas</p>
+                <p>Sofa, Chair, Home, Shop</p>
+                <div class="socials">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-linkedin"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <!-- <script src="../script.js"></script> -->
 </html>
