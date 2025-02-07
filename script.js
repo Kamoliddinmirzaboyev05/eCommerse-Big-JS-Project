@@ -19,11 +19,29 @@ const getData = async (link) => {
   writeData(data);
 };
 getData(apiLink);
-
+let count = 8,
+  i = 0;
+let less = true;
+showMore.addEventListener("click", () => {
+  if (less) {
+    less = false;
+    count = 20;
+    writeData(data);
+  }else{
+    less = true;
+    count = 8;
+    writeData(data);
+  }
+});
 // writedata function
 const writeData = (DB) => {
+  sctBlock.innerHTML = "";
+  i = 0;
   DB.forEach((item) => {
-    sctBlock.innerHTML += `
+    if (i < count) {
+      i = i + 1;
+      console.log(i);
+      sctBlock.innerHTML += `
         <div class="sct2-card">
               <div class="hover-data">
                 <div onclick="addProduct(${
@@ -62,19 +80,11 @@ const writeData = (DB) => {
                 </div>
               </div>
             </div>`;
+    }
   });
 };
 
 // show more button function
-
-showMore.addEventListener("click", () => {
-  sctBlock.classList.toggle("moreProduct");
-  if (sctBlock.classList.contains("moreProduct")) {
-    showMore.textContent = "Show less";
-  } else {
-    showMore.textContent = "Show more";
-  }
-});
 
 // open cart function
 shoppingCart.addEventListener("click", () => {
@@ -136,6 +146,8 @@ const removeCart = (id) => {
 const calculateCart = (array) => {
   subtotal.textContent = 0;
   array.forEach((item) => {
-    subtotal.textContent = Number(Number(subtotal.textContent) + item.price).toFixed(2)
+    subtotal.textContent = Number(
+      Number(subtotal.textContent) + item.price
+    ).toFixed(2);
   });
 };
