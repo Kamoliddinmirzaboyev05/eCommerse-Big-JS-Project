@@ -9,7 +9,77 @@ const subtotal = document.querySelector(".subtotal");
 // empty array for cart products
 const apiLink = "https://fakestoreapi.com/products";
 
-let cartElements = [];
+let cartElements = localStorage.getItem("cartProducts")
+  ? JSON.parse(localStorage.getItem("cartProducts"))
+  : [];
+
+// Main functions start
+
+// Add product function
+const addProduct = (id) => {
+  data.forEach((item) => {
+    if (item.id == id) {
+      cartElements.push(item);
+      localStorage.setItem("cartProducts", JSON.stringify(cartElements));
+      console.log(cartElements);
+      writeCart(cartElements);
+      calculateCart(cartElements);
+    }
+  });
+};
+// Remove cart function
+const removeCart = (id) => {
+  let filteredCart = cartElements.filter((item) => {
+    return item.id != id;
+  });
+  cartElements = filteredCart;
+  localStorage.setItem("cartProducts", JSON.stringify(cartElements));
+  writeCart(cartElements);
+  calculateCart(cartElements);
+};
+// Calculate cart function
+const calculateCart = (array) => {
+  subtotal.textContent = 0;
+  array.forEach((item) => {
+    subtotal.textContent = Number(
+      Number(subtotal.textContent) + item.price
+    ).toFixed(2);
+  });
+};
+// Write cart function
+const writeCart = (array) => {
+  cartProducts.innerHTML = "";
+  array.forEach((item) => {
+    cartProducts.innerHTML += `
+      <div class="product">
+              <div class="aboutProduct">
+                <div class="productImg">
+                  <img src="${item.image}" alt="" />
+                </div>
+                <div class="productData">
+                  <h2 class="productTitle">${String(item.title).slice(
+                    0,
+                    20
+                  )} ...</h2>
+                  <div class="product-calc">
+                    <p class="count">1</p>
+                    <p>x</p>
+                    <p class="productPrice">Rs. ${item.price}</p>
+                  </div>
+                </div>
+              </div>
+              <div onclick="removeCart(${item.id})" class="close-product">
+                <img src="img/x.svg" alt="x" />
+              </div>
+            </div>
+    `;
+  });
+};
+
+// Main functions end
+writeCart(cartElements);
+calculateCart(cartElements);
+
 let data;
 // getdata function
 const getData = async (link) => {
@@ -27,7 +97,7 @@ showMore.addEventListener("click", () => {
     less = false;
     count = 20;
     writeData(data);
-  }else{
+  } else {
     less = true;
     count = 8;
     writeData(data);
@@ -61,6 +131,7 @@ const writeData = (DB) => {
                     <p>Like</p>
                   </div>
                 </div>
+                <a class="readMore" href="./Product Comparison/comparison.html">Read more</a>
               </div>
               <div class="card-img">
                 <img src="${item.image}" alt="" />
@@ -93,61 +164,3 @@ shoppingCart.addEventListener("click", () => {
 closeCart.addEventListener("click", () => {
   cartBack.classList.remove("active");
 });
-
-const addProduct = (id) => {
-  data.forEach((item) => {
-    if (item.id == id) {
-      cartElements.push(item);
-      console.log(cartElements);
-      writeCart(cartElements);
-      calculateCart(cartElements);
-    }
-  });
-};
-
-const writeCart = (array) => {
-  cartProducts.innerHTML = "";
-  array.forEach((item) => {
-    cartProducts.innerHTML += `
-    <div class="product">
-            <div class="aboutProduct">
-              <div class="productImg">
-                <img src="${item.image}" alt="" />
-              </div>
-              <div class="productData">
-                <h2 class="productTitle">${String(item.title).slice(
-                  0,
-                  20
-                )} ...</h2>
-                <div class="product-calc">
-                  <p class="count">1</p>
-                  <p>x</p>
-                  <p class="productPrice">Rs. ${item.price}</p>
-                </div>
-              </div>
-            </div>
-            <div onclick="removeCart(${item.id})" class="close-product">
-              <img src="img/x.svg" alt="x" />
-            </div>
-          </div>
-  `;
-  });
-};
-
-const removeCart = (id) => {
-  let filteredCart = cartElements.filter((item) => {
-    return item.id != id;
-  });
-  cartElements = filteredCart;
-  writeCart(cartElements);
-  calculateCart(cartElements);
-};
-
-const calculateCart = (array) => {
-  subtotal.textContent = 0;
-  array.forEach((item) => {
-    subtotal.textContent = Number(
-      Number(subtotal.textContent) + item.price
-    ).toFixed(2);
-  });
-};

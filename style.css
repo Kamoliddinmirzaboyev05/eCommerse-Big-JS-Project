@@ -24,7 +24,7 @@ body {
   top: -2000px;
   z-index: 999999;
 }
-.active{
+.active {
   top: 0;
 }
 .cart {
@@ -35,7 +35,7 @@ body {
   right: 0;
   top: 0;
 }
-.total h2{
+.total h2 {
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -49,28 +49,28 @@ body {
   gap: 30px;
   scrollbar-width: thin;
 }
-.cart-title{
+.cart-title {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-bottom: 26px;
   border-bottom: 1px solid #d9d9d9;
 }
-.aboutProduct{
+.aboutProduct {
   display: flex;
   gap: 30px;
   align-items: center;
   justify-content: start;
 }
-.productPrice{
-  color: #B88E2F;
+.productPrice {
+  color: #b88e2f;
 }
 .product {
   display: flex;
   align-items: center;
   justify-content: space-between !important;
 }
-.productTitle{
+.productTitle {
   font-size: 18px;
   font-weight: 500;
 }
@@ -84,7 +84,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-.productData p{
+.productData p {
   font-size: 13px;
   font-weight: 500;
 }
@@ -104,8 +104,8 @@ body {
   gap: 80px;
   padding: 20px 0;
 }
-.subtotalText{
-  color: #B88E2F;
+.subtotalText {
+  color: #b88e2f;
 }
 .hr {
   position: absolute;
@@ -114,13 +114,13 @@ body {
   height: 1px;
   background-color: #898989;
 }
-.cartButtons{
+.cartButtons {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-top: 30px;
 }
-.cartButtons button{
+.cartButtons button {
   padding: 6px 30px;
   border-radius: 50px;
   font-size: 12px;
@@ -149,8 +149,8 @@ nav .container {
   text-decoration: none;
   color: black;
 }
-.links a:hover{
-  color: #B88E2F;
+.links a:hover {
+  color: #b88e2f;
 }
 .navButtons {
   display: flex;
@@ -158,7 +158,7 @@ nav .container {
   justify-content: center;
   gap: 45px;
 }
-.navBtn{
+.navBtn {
   width: 40px;
   height: 40px;
   display: flex;
@@ -166,8 +166,8 @@ nav .container {
   justify-content: center;
   border-radius: 50%;
 }
-.navBtn:hover{
-  color: #FFF3E3;
+.navBtn:hover {
+  color: #fff3e3;
   background-color: #898989;
 }
 
@@ -322,6 +322,13 @@ nav .container {
   flex-direction: column;
   padding: 20px;
   opacity: 0;
+}
+.readMore {
+  color: white;
+  border: 1px solid #b88e2f;
+  background-color: #b88e2f;
+  text-decoration: none;
+  padding: 5px 10px;
 }
 .sct2-card:hover .hover-data {
   opacity: 1;
