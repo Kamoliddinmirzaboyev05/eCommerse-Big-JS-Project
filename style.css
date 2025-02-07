@@ -129,12 +129,6 @@ body {
 }
 
 /* Styling nav section */
-nav{
-  position: fixed;
-  width: 100%;
-  z-index: 99999;
-  backdrop-filter: blur(15px);
-}
 nav .container {
   display: flex;
   align-items: center;
