@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="checkout.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" href="../img/logo.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <title>Cart</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="container">
+          <!-- This is Nav -->
+          <a href="../index.html">
+            <div class="logo">
+              <img src="../img/logo.svg" alt="" /></div
+          ></a>
+          <ul class="links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../shop/shop.html">Shop</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+
+          <div class="navButtons">
+            <div class="navBtn"><i class="fa-regular fa-user"></i></div>
+            <div class="navBtn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="navBtn"><i class="fa-regular fa-heart"></i></div>
+            <div class="navBtn">
+              <i class="fa-solid fa-cart-shopping shoppingCart"></i>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="shop-hero">
+        <img src="../img/logo.svg" alt="" />
+        <div class="heroTitle">
+          <h2>Checkout</h2>
+        </div>
+        <div class="way">
+          <p>Home</p>
+          <p>></p>
+          <p>Checkout</p>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="identification">
+        <div class="container">
+          <div class="yourData">
+            <div class="yourData-title">
+              <h2>Billing details</h2>
+            </div>
+            <div class="name">
+              <div class="fName">
+                <p>First Name</p>
+                <input type="text" placeholder="" />
+              </div>
+              <div class="lName">
+                <p>Last Name</p>
+                <input type="text" />
+              </div>
+            </div>
+            <div class="inputData">
+              <p>Company Name (Optional)</p>
+              <input type="text" />
+            </div>
+            <div class="inputData">
+              <p>Country/Region</p>
+              <select name="select" id="select">
+                <option value="Andijon">Andijon</option>
+                <option value="Fargona">Fargona</option>
+                <option value="Namangan">Namangan</option>
+                <option value="Toshkent">Toshkent</option>
+                <option value="Samarqand">Samarqand</option>
+                <option value="Qashqadaryo">Qashqadaryo</option>
+                <option value="Surxondaryo">Surxondaryo</option>
+                <option value="Jizzax">Jizzax</option>
+              </select>
+            </div>
+            <div class="inputData">
+              <p>Street address</p>
+              <input type="text" />
+            </div>
+            <div class="inputData">
+              <p>Town/City</p>
+              <input type="text" />
+            </div>
+            <div class="inputData">
+              <p>Province</p>
+              <select name="select" id="select">
+                <option value="Andijon">Andijon</option>
+                <option value="Fargona">Fargona</option>
+                <option value="Namangan">Namangan</option>
+                <option value="Toshkent">Toshkent</option>
+                <option value="Samarqand">Samarqand</option>
+                <option value="Qashqadaryo">Qashqadaryo</option>
+                <option value="Surxondaryo">Surxondaryo</option>
+                <option value="Jizzax">Jizzax</option>
+              </select>
+            </div>
+            <div class="inputData">
+              <p>ZIP Code</p>
+              <input type="text" />
+            </div>
+            <div class="inputData">
+              <p>Phone</p>
+              <input type="text" />
+            </div>
+            <div class="inputData">
+              <p>Email address</p>
+              <input type="text" />
+            </div>
+            <div class="inputData">
+              <p>Additional information</p>
+              <input type="text" />
+            </div>
+          </div>
+          <div class="yourOrder">
+            <div class="row">
+              <p class="colTitle">Product</p>
+              <p class="colTitle">Subtotal</p>
+            </div>
+            <div class="row">
+              <p><span>Asgaard sofa</span> x 1</p>
+              <p>Rs. 250,000.00</p>
+            </div>
+            <div class="row">
+              <p>Subtotal</p>
+              <p>Rs. 250,000.00</p>
+            </div>
+            <div class="row lastRow">
+              <p>Total</p>
+              <p class="totalPrice">Rs. 250,000.00</p>
+            </div>
+            <div class="payment">
+              <div class="paymentType">
+                <input type="radio" />
+                <p class="paymentTitle">Direct Bank Transfer</p>
+              </div>
+              <p class="paymentInfo">
+                Make your payment directly into our bank account. Please use
+                your Order ID as the payment reference. Your order will not be
+                shipped until the funds have cleared in our account.
+              </p>
+              <div class="paymentType">
+                <input type="radio" />
+                <p class="paymentTitlesec">Direct Bank Transfer</p>
+              </div>
+              <div class="paymentType">
+                <input type="radio" />
+                <p class="paymentTitlesec">Cash On Delivery</p>
+              </div>
+              <p>
+                Your personal data will be used to support your experience
+                throughout this website, to manage access to your account, and
+                for other purposes described in our <span class="bolder">privacy policy.</span>
+              </p>
+              <div class="placeOrder">
+                <button class="placeOrderBtn">Place Order</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="services">
+        <div class="container">
+          <div class="service">
+            <img src="../img/hight.svg" alt="" />
+            <div class="service-text">
+              <h2>High Quality</h2>
+              <p>crafted from top materials</p>
+            </div>
+          </div>
+          <div class="service">
+            <img src="../img/protection.svg" alt="" />
+            <div class="service-text">
+              <h2>Warranty Protection</h2>
+              <p>Over 2 years</p>
+            </div>
+          </div>
+          <div class="service">
+            <img src="../img/shipping.svg" alt="" />
+            <div class="service-text">
+              <h2>Free Shipping</h2>
+              <p>Order over 150 $</p>
+            </div>
+          </div>
+          <div class="service">
+            <img src="../img/call.svg" alt="" />
+            <div class="service-text">
+              <h2>24 / 7 Support</h2>
+              <p>Dedicated support</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <!-- This is footer -->
+        <div class="col">
+          <h2 class="footer-logo">Funiro.</h2>
+          <p class="footer-info">
+            400 University Drive Suite 200 Coral Gables, FL 33134 USA
+          </p>
+        </div>
+        <div class="col">
+          <p class="bolder">Links</p>
+          <p>Home</p>
+          <p>Shop</p>
+          <p>About</p>
+          <p>Contact</p>
+        </div>
+        <div class="col">
+          <p class="bolder">Help</p>
+          <p>Payment Options</p>
+          <p>Returns</p>
+          <p>Privacy Policies</p>
+        </div>
+        <div class="col">
+          <p class="bolder">Newsletter</p>
+          <form action="#">
+            <input type="text" placeholder="Enter Your Email Address" />
+            <button class="subscribe">subscribe</button>
+          </form>
+        </div>
+      </div>
+      <p class="copyright">2023 furino. All rights reverved</p>
+    </footer>
+  </body>
+</html>

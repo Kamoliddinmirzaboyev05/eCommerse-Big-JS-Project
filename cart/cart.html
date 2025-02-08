@@ -42,6 +42,8 @@
       </nav>
       <div class="shop-hero">
         <div class="heroTitle">
+          <img src="../img/logo.svg" alt="">
+
           <h2>Cart</h2>
         </div>
         <div class="way">
@@ -52,42 +54,41 @@
       </div>
     </header>
     <main>
-      <section class="filter-section">
+      <section class="cartProductData">
         <div class="container">
-          <div class="left-function">
-            <div class="filter">
-              <img src="../img/filter-icon.svg" alt="" />
-              <p>Filter</p>
+          <div class="productData">
+            <div class="dataNav">
+              <p>Product</p>
+              <p class="price">Price</p>
+              <p class="quantity">Quantity</p>
+              <p>Subtotal</p>
             </div>
-            <img src="../img/visible.svg" alt="" />
-            <img src="../img/list.svg" alt="" />
-            <img src="../img/row.svg" alt="" />
-            <p>Showing 1–16 of 32 results</p>
-          </div>
-          <div class="right-function">
-            <div class="show">
-              <p>Show</p>
-              <input type="number" />
-            </div>
-            <div class="sort">
-              <p>Sort by</p>
-              <select name="select" id="select">
-                <option value="default">Default</option>
-                <option value="wear">Wear</option>
-                <option value="technic">Technic</option>
-                <option value="woman">Woman</option>
-              </select>
+            <div class="productList">
+              <div class="cartProduct">
+                <div class="productImg">
+                  <img src="../img/main1.png" alt="">
+                </div>
+                <p class="gray">Asgaard sofa</p>
+                <p class="gray">Rs. 250,000.00</p>
+                <p class="valueProduct">1</p>
+                <p class="subtotalProduct">Rs. 250,000.00</p>
+                <div class="trash">
+                  <i class="fas fa-trash"></i>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section class="shop-products">
-        <div class="container">
-          <div class="page-number">
-            <button class="numberPage">1</button>
-            <button class="numberPage">2</button>
-            <button class="numberPage">3</button>
-            <button class="nextBtn">Next</button>
+          <div class="productTotals">
+            <h2>Cart Totals</h2>
+            <div class="row">
+              <p class="key">Subtotal</p>
+              <p class="subtotalValue">Rs. 250,000.00</p>
+            </div>
+            <div class="row">
+              <p class="key">Total</p>
+              <p id="totalValue">Rs. 250,000.00</p>
+            </div>
+            <button class="checkoutBtn">Checkout</button>
           </div>
         </div>
       </section>
