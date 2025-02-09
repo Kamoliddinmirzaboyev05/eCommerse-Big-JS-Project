@@ -1,0 +1,131 @@
+.shop-hero {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-image: url("../img/shophero.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.heroTitle {
+  padding-bottom: 10px;
+}
+.heroTitle h2 {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 72px;
+}
+.way {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.way p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}
+/* Styling contactdata section */
+.contactData {
+  padding-top: 98px;
+}
+.contactData .container .mainContact {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 100px;
+}
+.sectionTitle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 80px;
+}
+.sectionTitle p {
+  width: 640px;
+  text-align: center;
+  color: #9f9f9f;
+  font-size: 16px;
+}
+.itemTitle {
+  width: 200px;
+}
+.addressItem i {
+  padding-top: 7px;
+  font-size: 22px;
+}
+.itemTitle h2 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  padding-bottom: 0px;
+}
+.addressItem {
+  display: flex !important;
+  align-items: start;
+  justify-content: start;
+  padding-bottom: 42px;
+  gap: 30px;
+}
+/* Styling address item center */
+.inputAddress {
+  width: 600px;
+  padding: 00px 60px;
+}
+.inputAddressItem p {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 24px;
+  padding-bottom: 10px;
+}
+.inputAddressItem input, .inputAddressItem textarea {
+  width: 90%;
+  background-color: transparent;
+  padding: 20px 30px;
+  border-radius: 10px;
+  border: 1px solid #9f9f9f;
+  margin-bottom: 20px;
+}
+textarea{
+  height: 120px;
+}
+.inputAddress button{
+  padding: 13px 85px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 30px;
+  color: white;
+  background-color: #B88E2F;
+}
+/* styling service section */
+
+.services {
+  background-color: #faf3ea;
+  padding: 80px 0;
+}
+.services .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.service {
+  display: flex;
+  gap: 10px;
+}
+.service h2 {
+  color: #242424;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 37px;
+}
+.service p {
+  color: #898989;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+}
