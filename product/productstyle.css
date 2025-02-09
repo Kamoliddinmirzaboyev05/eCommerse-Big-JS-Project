@@ -1,6 +1,4 @@
-main {
-  padding-top: 100px;
-}
+
 .way {
   background-color: #f9f1e7;
   padding: 38px 0;
@@ -52,7 +50,9 @@ main {
   justify-content: center;
 }
 .main-img img {
-  width: 100%;
+  width: 80%;
+  mix-blend-mode: darken;
+  object-fit: cover;
 }
 .leftSide {
   width: 510px;

@@ -131,7 +131,9 @@ const writeData = (DB) => {
                     <p>Like</p>
                   </div>
                 </div>
-                <a class="readMore" href="./Product Comparison/comparison.html">Read more</a>
+                <a onclick="sendId(${
+                  item.id
+                })" class="readMore" href="./product/product.html">Read more</a>
               </div>
               <div class="card-img">
                 <img src="${item.image}" alt="" />
@@ -155,7 +157,13 @@ const writeData = (DB) => {
   });
 };
 
-// show more button function
+// sendId function
+
+const sendId = (num) => {
+  localStorage.setItem("productID", Number(num));
+  // console.log(localStorage.getItem("productID"));
+  
+};
 
 // open cart function
 shoppingCart.addEventListener("click", () => {
