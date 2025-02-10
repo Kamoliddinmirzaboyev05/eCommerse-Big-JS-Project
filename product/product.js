@@ -39,7 +39,7 @@ const writeData = (DB) => {
                     </div>
                     <div class="right-side">
                       <h2 class="product-title">${product.title}</h2>
-                      <p class="product-price">${product}</p>
+                      <p class="product-price">$${product.price}</p>
                       <div class="rating">
                         <img src="../img/satrs.svg" alt="" />
                         <p>|</p>
